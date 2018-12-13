@@ -1,0 +1,59 @@
+body{
+    background: #707070;
+}
+
+#mobile-nav{
+    z-index: 1;
+    background:#2C2924;
+    border-bottom: 10px #F9B042 solid;
+    box-shadow: 0px -8px 50px 10px #000000;
+}
+
+.menu-icon:hover::after {
+    background: #F9B042;
+    box-shadow: 0 7px 0 #F9B042, 0 14px 0 #F9B042;
+}
+
+footer{
+    text-align:center;
+    background:#2c2924;
+    color:#ffffff;
+    border-top:10px #F9B042 solid;
+    /*
+
+    Currently the box-shadow doesn't display properly. Disabled until fixed.
+
+    box-shadow:0px 8px 50px 10px #000000;
+
+    */
+}
+
+#footer-social-list{
+    margin:0;
+    padding: 0 0 15px 0;
+    align-content: center;
+}
+#footer-social-list li{
+
+    padding:10px;
+    display:inline;
+}
+
+.grid-container{
+    padding:0;
+}
+
+.nav-box-odd{
+    background: #8CC63E;
+    color:#2c2924;
+}
+.nav-box-odd a{
+    text-decoration: unset;
+    color:#2c2924;
+    font-size: 5em;
+
+}
+
+.nav-box-even{
+    background: #F9B042;
+}
