@@ -1,17 +1,66 @@
+/* Fonts
+
+font-family: 'Montserrat', sans-serif; - Headings
+font-family: 'Open Sans', sans-serif; - Text
+font-family: 'Open Sans', sans-serif; italics - subtext
+
+*/
+
+
 body{
     background: #707070;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #mobile-nav{
-    z-index: 1;
+    
     background:#2C2924;
     border-bottom: 10px #F9B042 solid;
+    /*
+    
+    Currently the box-shadow doesn't display properly. Disabled until fixed.
+
+    z-index: 1;
     box-shadow: 0px -8px 50px 10px #000000;
+
+    */
 }
 
 .menu-icon:hover::after {
     background: #F9B042;
+    /*
+    
+    Currently the box-shadow doesn't display properly. Disabled until fixed.
+
     box-shadow: 0 7px 0 #F9B042, 0 14px 0 #F9B042;
+
+    */
+}
+
+.grid-container{
+    padding:0;
+}
+
+.nav-box-odd{
+    background: #8CC63E;
+}
+.nav-box-odd a{
+    text-decoration: unset;
+    color:#2c2924;
+    font-size: 5em;
+    font-family: 'Montserrat', sans-serif
+}
+
+.nav-box-even{
+    background: #F9B042;
+}
+
+.nav-box-even a{
+    text-decoration: unset;
+    color:#2c2924;
+    font-size: 5em;
+    font-family: 'Montserrat', sans-serif
+
 }
 
 footer{
@@ -34,26 +83,6 @@ footer{
     align-content: center;
 }
 #footer-social-list li{
-
     padding:10px;
     display:inline;
-}
-
-.grid-container{
-    padding:0;
-}
-
-.nav-box-odd{
-    background: #8CC63E;
-    color:#2c2924;
-}
-.nav-box-odd a{
-    text-decoration: unset;
-    color:#2c2924;
-    font-size: 5em;
-
-}
-
-.nav-box-even{
-    background: #F9B042;
 }
