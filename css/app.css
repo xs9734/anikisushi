@@ -125,9 +125,15 @@ footer{
 }
 
 #topbar-center-logo{
+    background: #2c2924;
     position:fixed;
     display:flex;
-    top:80px;
+    top:10%;
+    height:80%;
     width:100%;
     transition: display 2s linear 1s;
+}
+
+.top-bar, .top-bar ul{
+    background:transparent;
 }
