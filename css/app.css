@@ -16,7 +16,7 @@ body{
     position: fixed;
     padding:25px 20px 8px 20px;
 
-    background:#2C2924;
+    background: #2C2924;
     border-bottom: 10px #F9B042 solid;
     /*
     
@@ -69,8 +69,8 @@ body{
     display:block;
     overflow:auto;
     text-decoration: unset;
-    text-shadow: 0 1px 5px #2c2924;
-    color:#2c2924;
+    text-shadow: 0 0 0 #2c2924;
+    color: #2c2924;
     font-size: 5em;
     font-family: 'Montserrat', sans-serif;
     transition: 1s;
@@ -91,9 +91,9 @@ body{
     height:100%;
     display:block;
     overflow:auto;
-    text-shadow: 0 1px 5px #2c2924;
+    text-shadow: 0 0 0 #2c2924;
     text-decoration: unset;
-    color:#2c2924;
+    color: #2c2924;
     font-size: 5em;
     font-family: 'Montserrat', sans-serif;
     transition: 1s;
@@ -102,8 +102,8 @@ body{
 footer{
     text-align:center;
     font-family: 'Open Sans', sans-serif;
-    background:#2c2924;
-    color:#ffffff;
+    background: #2c2924;
+    color: #ffffff;
     border-top:10px #F9B042 solid;
     /*
 
@@ -125,15 +125,42 @@ footer{
 }
 
 #topbar-center-logo{
-    background: #2c2924;
+    background: #4a7900;
     position:fixed;
     display:flex;
     top:10%;
     height:80%;
     width:100%;
     transition: display 2s linear 1s;
+
 }
 
 .top-bar, .top-bar ul{
     background:transparent;
+}
+
+.top-bar ul a:hover,
+.top-bar ul a:active {
+    text-shadow: 0 0 0 #2c2924;
+    font-size:5.5em;
+    transition: 1s;
+}
+
+.top-bar ul a {
+    width:100%;
+    height:100%;
+    display:block;
+    overflow:auto;
+    text-decoration: unset;
+    text-shadow: 0 0 0 #2c2924;
+    color: #ffffff;
+    font-size: 5em;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+}
+
+.top-bar-center{
+    visibility:hidden;
+    height:0;
+    width:0;
 }
