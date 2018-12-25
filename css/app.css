@@ -142,7 +142,7 @@ footer{
 .top-bar ul a:hover,
 .top-bar ul a:active {
     text-shadow: 0 0 0 #2c2924;
-    font-size:5.5em;
+    font-size:3.5em;
     transition: 1s;
 }
 
@@ -154,7 +154,7 @@ footer{
     text-decoration: unset;
     text-shadow: 0 0 0 #2c2924;
     color: #ffffff;
-    font-size: 5em;
+    font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     transition: 1s;
 }
