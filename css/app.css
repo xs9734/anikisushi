@@ -6,7 +6,7 @@ font-family: 'Open Sans', sans-serif; italics - subtext
 
 */
 
-
+@media only screen and (max-width: 40em) { 
 body{
     background: #2C2924;
     font-family: 'Open Sans', sans-serif;
@@ -44,6 +44,9 @@ body{
     padding:0;
 }
 
+.tabes{
+    max-width:100%;
+}
 #first-box{
     padding-top:70px;
     padding-left:0;
@@ -164,3 +167,4 @@ footer{
     height:0;
     width:0;
 }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
