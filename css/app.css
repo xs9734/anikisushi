@@ -22,39 +22,36 @@ body{
 
     background: #2C2924;
     border-bottom: 10px #F9B042 solid;
-    /*
-    
-    Currently the box-shadow doesn't display properly. Disabled until fixed.
 
-    z-index: 1;
-    box-shadow: 0px -8px 50px 10px #000000;
+}
 
-    */
+.menu-icon::after{
+    background: #F9B042;
+    box-shadow: 0 7px 0 #F9B042, 0 14px 0 #F9B042;
 }
 
 .menu-icon:hover::after {
-    background: #F9B042;
-
-    /*
-    
-    Currently the box-shadow doesn't display properly. Disabled until fixed.
-
-    box-shadow: 0 7px 0 #F9B042, 0 14px 0 #F9B042;
-
-    */
+    background: #8CC63E;
+    box-shadow: 0 7px 0 #8CC63E, 0 14px 0 #8CC63E;
 }
 
 .grid-container{
     padding:0;
 }
 
+#map-wrapper{
+    height:410px;
+}
+
 #map{
     width:100%;
-    height:400px;
+    height:410px;
 }
+
 .tabes{
     max-width:100%;
 }
+
 #first-box{
     padding-top:70px;
     padding-left:0;
