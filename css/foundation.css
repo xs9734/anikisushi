@@ -574,28 +574,28 @@ textarea {
       width: calc(100% - 1.875rem); } }
 
 .grid-padding-x .grid-padding-x {
-  margin-right: -0.625rem;
-  margin-left: -0.625rem; }
+  margin-right: 0;
+  margin-left: 0; }
   @media print, screen and (min-width: 40em) {
     .grid-padding-x .grid-padding-x {
-      margin-right: -0.9375rem;
-      margin-left: -0.9375rem; } }
+      margin-right: 0;
+      margin-left: 0; } }
 
 .grid-container:not(.full) > .grid-padding-x {
-  margin-right: -0.625rem;
-  margin-left: -0.625rem; }
+  margin-right: 0;
+  margin-left: 0; }
   @media print, screen and (min-width: 40em) {
     .grid-container:not(.full) > .grid-padding-x {
-      margin-right: -0.9375rem;
-      margin-left: -0.9375rem; } }
+      margin-right: 0;
+      margin-left: 0; } }
 
 .grid-padding-x > .cell {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem; }
+  padding-right: 0;
+  padding-left: 0; }
   @media print, screen and (min-width: 40em) {
     .grid-padding-x > .cell {
-      padding-right: 0.9375rem;
-      padding-left: 0.9375rem; } }
+      padding-right: 0;
+      padding-left: 0; } }
 
 .small-up-1 > .cell {
   width: 100%; }
