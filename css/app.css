@@ -25,6 +25,9 @@ body{
 
 }
 
+.foodmenu{
+    margin-bottom:0;
+}
 .menu-icon::after{
     background: #F9B042;
     box-shadow: 0 7px 0 #F9B042, 0 14px 0 #F9B042;
@@ -71,6 +74,12 @@ body{
     overflow: hidden;
 }
 
+.nav-box-even-sub{
+    padding:0;
+    background: #F9B042;
+    overflow: hidden;
+}
+
 .day{
     font-size: 2em;
 }
@@ -83,6 +92,19 @@ body{
     color: #FFFFFF;
 }
 
+.food-item{
+    padding:5px 0 5px 5px;
+    font-size: 1em;
+    background: #4A7900;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+
+.food-item p{
+    margin:0;
+    text-align: left;
+}
+
 .nav-box-odd a {
     width:100%;
     height:100%;
@@ -91,15 +113,17 @@ body{
     text-decoration: unset;
     text-shadow: 0 0 0 #2c2924;
     color: #2c2924;
-    font-size: 5em;
+    font-size: 4em;
     font-family: 'Montserrat', sans-serif;
     transition: 1s;
 }
 
 .nav-box-odd a:hover,
 .nav-box-even a:hover,
+.nav-box-even-sub a:hover,
 .nav-box-odd a:active,
-.nav-box-even a:active {
+.nav-box-even a:active,
+.nav-box-even-sub a:active {
     text-shadow: 0 0 0 #2c2924;
     transition: 1s;
 }
@@ -114,7 +138,22 @@ body{
     text-shadow: 0 0 0 #2c2924;
     text-decoration: unset;
     color: #2c2924;
-    font-size: 5em;
+    font-size: 4em;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+}
+
+.nav-box-even-sub a{
+    width:100%;
+    height:100%;
+    width:100%;
+    height:100%;
+    display:block;
+    overflow:auto;
+    text-shadow: 0 0 0 #2c2924;
+    text-decoration: unset;
+    color: #2c2924;
+    font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     transition: 1s;
 }
@@ -191,6 +230,10 @@ footer{
 
 .subhead{
     font-size:0.5em;
+}
+
+.submenu{
+    margin-left:0;
 }
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
