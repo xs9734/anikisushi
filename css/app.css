@@ -23,7 +23,7 @@ a{
 #mobile-nav{
     position: fixed;
     padding:25px 20px 8px 20px;
-
+    z-index:1;
     background: #2C2924;
     border-bottom: 10px #F9B042 solid;
 
@@ -178,23 +178,23 @@ footer{
     display:inline;
 }
 
-ul {
+.dropdown-pane ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
 
-li a:link, li a:visited {
+.dropdown-pane li a:link, .dropdown-pane li a:visited {
     color: #FFFFFF;
     font-size: 2em;
   }
   
-li a:hover {
+.dropdown-pane li a:hover {
     color: #F9B042;
     font-size: 2em;
   }
   
-li a:active {
+.dropdown-pane li a:active {
     color: #F9B042;
     font-size: 2em;
   }
