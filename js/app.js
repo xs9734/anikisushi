@@ -11,6 +11,10 @@ window.onresize = function(){
     document.getElementById("first-box").style.paddingTop = h +"px";
 }
 
+function menubuttonanimate(x) {
+    x.classList.toggle("change");
+  }
+
 /*
 var x = document.getElementById('mobile-nav').offsetHeight;
 console.log(x);

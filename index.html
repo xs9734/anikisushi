@@ -41,17 +41,32 @@
   <body>
 
     <!-- Mobile Navigation -->
-    <div id="mobile-nav" class="title-bar topbar-center-logo-mobile" data-responsive-toggle="topbar-center-logo" data-hide-for="medium">
+    <div id="mobile-nav" class="title-bar topbar-center-logo-mobile" data-responsive-toggle="topbar-center-logo" data-hide-for="large">
       <div class="title-bar-left">
         <div class="title-bar-title"><a href="index.html"><img src="images/aniki_logo.png" alt="Aniki Sushi Logo"/></a></div>
       </div>
       <div class="title-bar-right">
-        <button class="menu-icon" type="button" data-toggle="topbar-center-logo"></button>
+        <button class="hollow button warning large" id="nav-button" type="button" data-toggle="example-dropdown-bottom-right" onclick="menubuttonanimate(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+        <nav class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-auto-focus="true">
+          <!-- My dropdown content in here -->
+          <ul>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="drinks.html">Drinks</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="staff.html">Our&nbsp;Staff</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
-  
+
   <!-- Tablet & Desktop Navigation -->
-  <div class="top-bar topbar-center-logo" id="topbar-center-logo">
+<!--
+  <div class="top-bar topbar-center-logo" id="topbar-center-logo" data-hide-for="large">
     <div class="top-bar-left">
       <ul class="menu vertical medium-horizontal">
         <li><a href="pages/food.html">Food</a></li>
@@ -70,18 +85,19 @@
       </ul>
     </div>
   </div>
+-->
 
   <!-- Main Content -->
   <div class="grid-container">
 
     <!-- Food Tab -->
     <div id="first-box" class="grid-x grid-padding-x">
-      <div  class="small-12 large-4 cell tabes">
+      <div  class="small-12 medium-4 cell">
         <a href="">
           <img src="images/food.jpg" alt="">
         </a>
       </div>
-      <div class="small-12 large-8 cell nav-box-odd text-center">
+      <div class="small-12 medium-8 cell nav-box-odd text-center">
         <a href="">
           Food
         </a>
@@ -90,12 +106,12 @@
     
     <!-- Drinks Tab-->
     <div class="grid-x grid-padding-x">
-      <div class="small-12 large-4 cell">
+      <div class="small-12 medium-4 cell">
         <a href="">
           <img src="images/drinks.jpg" alt="">
         </a>
       </div>
-      <div class="small-12 large-8 cell nav-box-even text-center">
+      <div class="small-12 medium-8 cell nav-box-even text-center">
         <a href="">
           Drinks
         </a>
@@ -104,12 +120,12 @@
 
     <!-- Location Tab -->
     <div class="grid-x grid-padding-x">
-      <div class="small-12 large-4 cell">
+      <div class="small-12 medium-4 cell">
         <a href="pages/location.html">
           <img src="images/location.jpg" alt="Aniki's Sushi outdoor view">
         </a>
       </div>
-      <div class="small-12 large-8 cell nav-box-odd text-center">
+      <div class="small-12 medium-8 cell nav-box-odd text-center">
         <a href="pages/location.html">
           Location
         </a>
@@ -118,12 +134,12 @@
     
     <!-- Our Staff Tab-->
     <div class="grid-x grid-padding-x">
-      <div class="small-12 large-4 cell">
+      <div class="small-12 medium-4 cell">
         <a href="pages/staff.html">
           <img src="images/staff.jpg" alt="">
         </a>
       </div>
-      <div class="small-12 large-8 cell nav-box-even text-center">
+      <div class="small-12 medium-8 cell nav-box-even text-center">
         <a href="pages/staff.html">
           Our Staff
         </a>
@@ -132,12 +148,12 @@
 
     <!-- Contact Tab -->
     <div class="grid-x grid-padding-x">
-        <div class="small-12 large-4 cell">
+        <div class="small-12 medium-4 cell">
           <a href="">
             <img src="images/contact.jpg" alt="">
           </a>
         </div>
-        <div class="small-12 large-8 cell nav-box-odd text-center">
+        <div class="small-12 medium-8 cell nav-box-odd text-center">
           <a href="">
             Contact
           </a>

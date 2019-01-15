@@ -6,10 +6,14 @@ font-family: 'Open Sans', sans-serif; italics - subtext
 
 */
 
-@media only screen and (max-width: 40em) { 
+
 body{
     background: #2C2924;
     font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cell{
@@ -27,15 +31,6 @@ body{
 
 .foodmenu{
     margin-bottom:0;
-}
-.menu-icon::after{
-    background: #F9B042;
-    box-shadow: 0 7px 0 #F9B042, 0 14px 0 #F9B042;
-}
-
-.menu-icon:hover::after {
-    background: #8CC63E;
-    box-shadow: 0 7px 0 #8CC63E, 0 14px 0 #8CC63E;
 }
 
 .grid-container{
@@ -183,46 +178,26 @@ footer{
     display:inline;
 }
 
-#topbar-center-logo{
-    background: #4a7900;
-    position:fixed;
-    display:flex;
-    top:10%;
-    height:80%;
-    width:100%;
-    transition: display 2s linear 1s;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-}
-
-.top-bar, .top-bar ul{
-    background:transparent;
-}
-
-.top-bar ul a:hover,
-.top-bar ul a:active {
-    text-shadow: 0 0 0 #2c2924;
-    font-size:3.5em;
-    transition: 1s;
-}
-
-.top-bar ul a {
-    width:100%;
-    height:100%;
-    display:block;
-    overflow:auto;
-    text-decoration: unset;
-    text-shadow: 0 0 0 #2c2924;
-    color: #ffffff;
-    font-size: 3em;
-    font-family: 'Montserrat', sans-serif;
-    transition: 1s;
-}
-
-.top-bar-center{
-    visibility:hidden;
-    height:0;
-    width:0;
-}
+li a:link, li a:visited {
+    color: #FFFFFF;
+    font-size: 2em;
+  }
+  
+li a:hover {
+    color: #F9B042;
+    font-size: 2em;
+  }
+  
+li a:active {
+    color: #F9B042;
+    font-size: 2em;
+  }
 
 #address{
     font-size:unset;
@@ -236,4 +211,43 @@ footer{
     margin-left:0;
 }
 
-} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+#nav-button{
+    border-radius:100%;
+}
+
+.dropdown-pane{
+    background:#4A7900;
+    border: 3px solid #F9B042;
+    border-radius:5px;
+    text-align:center;
+    box-shadow: 0px 0px 11px 0px #000000;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    #nav-button{
+        border-radius:100%;
+        font-size:2.25em;
+    }
+
+
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #F9B042;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
